@@ -14,6 +14,7 @@
     <link href="https://gfonts.ctfile.com/css2?family=Inter:wght@400;700&display=swap"
           rel="stylesheet">
     <link href="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.1/css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link rel="shortcut icon" href="<?php $this->options->sitefavicon(); ?>" /> 
     <script src="https://lf3-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"
             type="application/javascript"></script>
     <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/bootstrap/4.6.1/js/bootstrap.min.js" type="application/javascript"></script>

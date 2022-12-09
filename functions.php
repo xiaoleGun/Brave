@@ -21,6 +21,8 @@ function themeConfig($form)
 {
     $navsay = new Text('navsay', NULL, NULL, _t('导航栏右侧文字设置'), _t('直接书写文字即可，不建议过长。也可使用相关随机api'));
     $form->addInput($navsay);
+    $sitefavicon = new Text('sitefavicon', NULL, NULL, _t('标题Logo设置'), _t('在这里输入图片链接'));
+    $form->addInput($sitefavicon);
     $heroimg = new Text('heroimg', NULL, NULL, _t('头部大图设置'), _t('在这里输入图片链接'));
     $form->addInput($heroimg);
     $lovetime = new Text('lovetime', NULL, NULL, _t('恋爱起始日期设定'), _t('格式“YYYY/MM/DD”，例“2022/07/16”'));
