@@ -65,6 +65,23 @@ $this->need('base/nav.php');
                 </div>
             </a>
         </div>
+        <div class="col-md-4">
+            <a href="<?php $this->options->albumPageLink() ?>" class="card ">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="avatar avatar-md">
+                                <img src="<?php $this->options->albumPageIcon() ?>" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="h5">相册</p>
+                            <p class="small text-muted mb-1">🖼️留住你我回忆</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 <?php $this->need('base/footer.php'); ?>

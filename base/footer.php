@@ -1,7 +1,7 @@
 </div>
 <div class="p-5 text-center ">
 	<h6>©<?php $this->options->title() ?></h6>
-	<p class="h6"> Powered by <a href="http://typecho.org" target="_blank">Typecho</a> ※ Theme is <a href="https://blog.zwying.com" target="_blank">Brave</a></p>
+	<p class="h6"> Powered by <a href="https://github.com/xiaoleGun" target="_blank">Dark</a></p>
 </div>
 <script src="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery.pjax/2.0.1/jquery.pjax.min.js" type="application/javascript"></script>
 <script src="https://lf26-cdn-tos.bytecdntp.com/cdn/expire-1-M/nprogress/0.2.0/nprogress.min.js" type="application/javascript"></script>

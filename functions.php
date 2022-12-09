@@ -48,6 +48,11 @@ function themeConfig($form)
     $timePageIcon = new Text('timePageIcon', NULL, NULL, _t('首页点点滴滴图标'), _t('在此输入图标直链，将显示在首页点点滴滴小版块中'));
     $form->addInput($timePageIcon);
 
+    $albumPageLink = new Text('albumPageLink', NULL, NULL, _t('相册页面链接'), _t('在此输入相册页面链接'));
+    $form->addInput($albumPageLink);
+    $albumPageIcon = new Text('albumPageIcon', NULL, NULL, _t('首页相册图标'), _t('在此输入图标直链，将显示在首页相册小版块中'));
+    $form->addInput($albumPageIcon);
+
     $CustomContenth = new Textarea('头部自定义', NULL, NULL, _t('头部自定义内容'), _t('位于头部，head内，适合放置一些链接引用或自定义内容'));
     $form->addInput($CustomContenth);
     $stylemyself = new Textarea('Css自定义', NULL, NULL, _t('自定义Css样式'), _t('已包含&lt;style&gt;标签，请直接书写样式'));
