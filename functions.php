@@ -23,8 +23,10 @@ function themeConfig($form)
     $form->addInput($navsay);
     $heroimg = new Text('heroimg', NULL, NULL, _t('头部大图设置'), _t('在这里输入图片链接'));
     $form->addInput($heroimg);
-    $lovetime = new Text('lovetime', NULL, NULL, _t('恋爱起始日期设定'), _t('格式“YYYY/MM/DD”，例“2021/06/26”'));
+    $lovetime = new Text('lovetime', NULL, NULL, _t('恋爱起始日期设定'), _t('格式“YYYY/MM/DD”，例“2022/07/16”'));
     $form->addInput($lovetime);
+    $anniversarytime = new Text('anniversarytime', NULL, NULL, _t('周年日期设定'), _t('格式“YYYY/MM/DD”，例“2023/07/16”'));
+    $form->addInput($anniversarytime);
     $boy = new Text('boy', NULL, NULL, _t('男生头像设置'), _t('在这里输入头像链接'));
     $form->addInput($boy);
     $girl = new Text('girl', NULL, NULL, _t('女生头像设置'), _t('在这里输入头像链接'));

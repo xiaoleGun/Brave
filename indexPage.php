@@ -12,6 +12,8 @@ $this->need('base/nav.php');
     <blockquote class="blockquote text-center my-5 py-2">
         <h5 class="card-title lover-card-title">我们风雨同舟已经一起走过</h5>
         <h5 id="site_runtime"></h5>
+        <h5 class="card-title lover-card-title">距离一周年还有</h5>
+        <h5 id="anniversary"></h5>
     </blockquote>
     <div class="row indexPlate">
         <div class="col-md-4">
