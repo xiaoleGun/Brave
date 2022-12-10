@@ -56,6 +56,11 @@ function themeConfig($form)
     $form->addInput($albumPageLink);
     $albumPageIcon = new Text('albumPageIcon', NULL, NULL, _t('首页相册图标'), _t('在此输入图标直链，将显示在首页相册小版块中'));
     $form->addInput($albumPageIcon);
+    
+    $maybeloveyouPageLink = new Text('maybeloveyouPageLink', NULL, NULL, _t('表白墙页面链接'), _t('在此输入表白墙页面链接'));
+    $form->addInput($maybeloveyouPageLink);
+    $maybeloveyouPageIcon = new Text('maybeloveyouPageIcon', NULL, NULL, _t('表白墙相册图标'), _t('在此输入图标直链，将显示在首页表白墙小版块中'));
+    $form->addInput($maybeloveyouPageIcon);
 
     $CustomContenth = new Textarea('头部自定义', NULL, NULL, _t('头部自定义内容'), _t('位于头部，head内，适合放置一些链接引用或自定义内容'));
     $form->addInput($CustomContenth);

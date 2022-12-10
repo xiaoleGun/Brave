@@ -1,15 +1,19 @@
 <?php
 
 /**
- * 祝福板
+ * 表白墙
  * @package custom
- * Author: Veen Zhao
- * CreateTime: 2020/9/6 15:38
+ * Author: Dark
+ * CreateTime: 2022/12/10 19:02
  */
 $this->need('base/head.php');
 $this->need('base/nav.php');
 $this->comments()->to($comments);
 ?>
+<blockquote class="blockquote text-center my-5 py-2">
+    <h5 class="card-title lover-card-title">你那么优秀，说不定Ta也喜欢你呢？</h5>
+    <h5 class="card-title lover-card-title">勇敢一次吧！</h5>
+</blockquote>
 <?php function threadedComments($comments, $options)
 {
     $commentClass = '';
@@ -51,11 +55,10 @@ echo $commentClass;
         </div>
     </div>
 <?php } ?>
-<?php if ($this->allow('comment')) : ?>
     <div id="<?php $this->respondId(); ?>" class="respond list-content mx-auto mt-5">
         <div class="list-top">
             <?php if ($comments->have()) : ?>
-                <h5 class="text-center"><?php $this->commentsNum(_t('暂无祝福'), _t('仅有一条祝福'), _t('累计已经收到<span class="bigfontNum"> %d </span>条祝福')); ?></h5>
+                <h5 class="text-center"><?php $this->commentsNum(_t('暂无表白'), _t('仅有一条表白'), _t('累计已经收到<span class="bigfontNum"> %d </span>条表白')); ?></h5>
                 <?php $comments->listComments(); ?>
                 <?php $comments->pageNav('&laquo; 前一页', '后一页 &raquo;'); ?>
             <?php endif; ?>
@@ -82,17 +85,14 @@ echo $commentClass;
                 <?php endif; ?>
                 <div class="form-group">
                     <textarea rows="3" cols="50" name="text" id="textarea" class="form-control"
-                              placeholder="<?php _e('写下对我们的祝福'); ?>"
+                              placeholder="<?php _e('写下你想对你的crush说的话'); ?>"
                               required><?php $this->remember('text'); ?></textarea>
                 </div>
                 <div class="form-group">
-                    <button type="submit" class="float-right btn btn-outline-danger"><?php _e('祝福发送'); ?></button>
+                    <button type="submit" class="float-right btn btn-outline-danger"><?php _e('勇敢一次'); ?></button>
                 </div>
             </form>
         </div>
     </div>
-<?php else : ?>
-    <h3><?php _e('评论已关闭'); ?></h3>
-<?php endif; ?>
 
 <?php $this->need('base/footer.php'); ?>

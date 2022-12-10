@@ -84,6 +84,23 @@ $this->need('base/nav.php');
                 </div>
             </a>
         </div>
+        <div class="col-md-4">
+            <a href="<?php $this->options->maybeloveyouPageLink() ?>" class="card ">
+                <div class="card-body">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <div class="avatar avatar-md">
+                                <img src="<?php $this->options->maybeloveyouPageIcon() ?>" alt="..." class="avatar-img rounded-circle">
+                            </div>
+                        </div>
+                        <div class="col">
+                            <p class="h5">表白墙</p>
+                            <p class="small text-muted mb-1">❤可能你的crush也喜欢你呢？</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 <?php $this->need('base/footer.php'); ?>
