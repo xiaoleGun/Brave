@@ -14,6 +14,8 @@ $this->need('base/nav.php');
         <h5 id="site_runtime"></h5>
         <h5 class="card-title lover-card-title">距离一周年还有</h5>
         <h5 id="anniversary"></h5>
+        <h5 class="card-title lover-card-title">距离中考还有</h5>
+        <h5 id="wherearewegoing"></h5>
     </blockquote>
     <div class="row indexPlate">
         <div class="col-md-4">

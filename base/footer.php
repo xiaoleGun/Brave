@@ -46,6 +46,26 @@
 	};
 	showEndRuntime();
 
+	window.showEndRuntime = function() {
+		var wherearewegoing = $("#wherearewegoing");
+		if (!wherearewegoing) return;
+		window.setTimeout("showEndRuntime()", 1000);
+		end = new Date("<?php $this->options->wherearewegoingtime(); ?>");
+		now = new Date();
+		T = (end.getTime() - now.getTime());
+		i = 24 * 60 * 60 * 1000;
+		d = T / i;
+		D = Math.floor(d);
+		h = (d - D) * 24;
+		H = Math.floor(h);
+		m = (h - H) * 60;
+		M = Math.floor(m);
+		s = (m - M) * 60
+		S = Math.floor(s);
+		wherearewegoing.html("<span class=\"bigfontNum\">" + D + "</span> 天 <span class=\"bigfontNum\">" + H + "</span> 小时 <span class=\"bigfontNum\">" + M + "</span> 分钟 <span class=\"bigfontNum\">" + S + "</span> 秒");
+	};
+	showEndRuntime();
+
     $(document).pjax('a', '#pjax-container', {
         fragment: '#pjax-container',
         timeout: 6000

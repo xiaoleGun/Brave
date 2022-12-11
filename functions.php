@@ -29,6 +29,8 @@ function themeConfig($form)
     $form->addInput($lovetime);
     $anniversarytime = new Text('anniversarytime', NULL, NULL, _t('周年日期设定'), _t('格式“YYYY/MM/DD”，例“2023/07/16”'));
     $form->addInput($anniversarytime);
+    $wherearewegoingtime = new Text('wherearewegoingtime', NULL, NULL, _t('中考日期设定'), _t('格式“YYYY/MM/DD”，例“2023/06/24”'));
+    $form->addInput($wherearewegoingtime);
     $boy = new Text('boy', NULL, NULL, _t('男生头像设置'), _t('在这里输入头像链接'));
     $form->addInput($boy);
     $girl = new Text('girl', NULL, NULL, _t('女生头像设置'), _t('在这里输入头像链接'));
