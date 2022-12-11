@@ -46,6 +46,7 @@ echo $commentClass;
                     <div class="comment_author">
                         <span class="name"><?php $comments->author(); ?></span>
                         <em><?php $comments->date('Y-m-d H:i'); ?></em>
+						<em>IP属地: <?php echo convertip($comments->ip); ?></em>
                     </div>
                     <div class="comment-text">
                         <?php $comments->content(); ?>

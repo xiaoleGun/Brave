@@ -4,6 +4,7 @@ use Typecho\Widget\Helper\Form\Element\Textarea;
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 require_once("core/shortcodes.php");
 require_once("core/App.php");
+require_once("core/ipdata.class.php");
 function themeInit()
 {
     Helper::options()->commentsAntiSpam = false; //关闭反垃圾
@@ -77,6 +78,7 @@ function themeConfig($form)
 
 }
 
-
-
-
+/** 获取评论者归属地信息 */
+function convertip($ip){  
+   echo convertips($ip);
+}
