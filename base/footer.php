@@ -25,7 +25,8 @@
 		site_runtime.html("第 <span class=\"bigfontNum\">" + D + "</span> 天 <span class=\"bigfontNum\">" + H + "</span> 小时 <span class=\"bigfontNum\">" + M + "</span> 分钟 <span class=\"bigfontNum\">" + S + "</span> 秒");
 	};
 	showSiteRuntime();
-
+</script>
+<script>
 	window.showEndRuntime = function() {
 		var anniversary = $("#anniversary");
 		if (!anniversary) return;
@@ -45,11 +46,12 @@
 		anniversary.html("<span class=\"bigfontNum\">" + D + "</span> 天 <span class=\"bigfontNum\">" + H + "</span> 小时 <span class=\"bigfontNum\">" + M + "</span> 分钟 <span class=\"bigfontNum\">" + S + "</span> 秒");
 	};
 	showEndRuntime();
-
-	window.showEndRuntime = function() {
+</script>
+<script>
+	window.showWherearewegoingtime = function() {
 		var wherearewegoing = $("#wherearewegoing");
 		if (!wherearewegoing) return;
-		window.setTimeout("showEndRuntime()", 1000);
+		window.setTimeout("showWherearewegoingtime()", 1000);
 		end = new Date("<?php $this->options->wherearewegoingtime(); ?>");
 		now = new Date();
 		T = (end.getTime() - now.getTime());
@@ -64,8 +66,9 @@
 		S = Math.floor(s);
 		wherearewegoing.html("<span class=\"bigfontNum\">" + D + "</span> 天 <span class=\"bigfontNum\">" + H + "</span> 小时 <span class=\"bigfontNum\">" + M + "</span> 分钟 <span class=\"bigfontNum\">" + S + "</span> 秒");
 	};
-	showEndRuntime();
-
+	showWherearewegoingtime();
+</script>
+<script>
     $(document).pjax('a', '#pjax-container', {
         fragment: '#pjax-container',
         timeout: 6000
