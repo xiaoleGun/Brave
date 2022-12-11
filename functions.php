@@ -23,6 +23,8 @@ function themeConfig($form)
     $form->addInput($navsay);
     $sitefavicon = new Text('sitefavicon', NULL, NULL, _t('标题Logo设置'), _t('在这里输入图片链接'));
     $form->addInput($sitefavicon);
+    $sitetime = new Text('sitetime', NULL, NULL, _t('网站页脚时间设置'), _t('在这里输入时间，例2022'));
+    $form->addInput($sitetime);
     $heroimg = new Text('heroimg', NULL, NULL, _t('头部大图设置'), _t('在这里输入图片链接'));
     $form->addInput($heroimg);
     $lovetime = new Text('lovetime', NULL, NULL, _t('恋爱起始日期设定'), _t('格式“YYYY/MM/DD”，例“2022/07/16”'));
